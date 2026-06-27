@@ -119,6 +119,29 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
+  if ($(".knowledge-carousel").length) {
+    $(".knowledge-carousel").owlCarousel({
+      loop: true,
+      margin: 24,
+      items: 1,
+      nav: true,
+      dots: true,
+      autoplay: false,
+      smartSpeed: 450,
+      navText: [
+        "<i class='ri-arrow-left-s-line'></i>",
+        "<i class='ri-arrow-right-s-line'></i>",
+      ],
+      responsive: {
+        0: { items: 1 },
+        768: { items: 1 },
+        1200: { items: 1 },
+      },
+    });
+  }
+});
+
+$(document).ready(function () {
   $(".tool-carousel-1").owlCarousel({
     loop: true,
     margin: 30,
