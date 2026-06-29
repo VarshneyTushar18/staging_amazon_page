@@ -1000,12 +1000,17 @@ header .mainmenu li a:hover {
         border-radius: 16px;
     }
 
-    .testimonial-section .owl-nav .owl-prev {
-        margin-left: 0;
+    .testimonial-section .owl-nav {
+        position: static;
+        transform: none;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 24px;
     }
 
+    .testimonial-section .owl-nav .owl-prev,
     .testimonial-section .owl-nav .owl-next {
-        margin-right: 0;
+        margin: 0;
     }
 }
 
