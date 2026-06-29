@@ -733,6 +733,30 @@ header .mainmenu li a:hover {
     color: #dc2626;
 }
 
+/* Contact Modal */
+.contact-modal-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    z-index: 10;
+    opacity: 0.5;
+    transition: opacity 0.2s ease;
+}
+
+.contact-modal-close:hover {
+    opacity: 1;
+}
+
+#server-message.success {
+    color: #16a34a;
+    font-size: 14px;
+}
+
+#server-message.error {
+    color: #dc2626;
+    font-size: 14px;
+}
+
 .hero-section h1 span {
     color: var(--orange);
 }

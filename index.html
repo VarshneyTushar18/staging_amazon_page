@@ -237,85 +237,80 @@
     </header>
     <div class="modal fade" id="contactModal" tabindex="-1" aria-hidden="true">
 
-        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-dialog modal-dialog-centered modal-md">
 
-            <div class="modal-content" style="background-color:#000; border:2px solid #f97415; border-radius:10px;">
+            <div class="modal-content"
+                style="background:#fff; border:none; border-radius:24px; box-shadow:0 24px 60px rgba(15,23,42,0.14); overflow:hidden;">
 
-                <div class="modal-header border-0">
+                <!-- Modal Close Button -->
+                <button type="button" class="btn-close contact-modal-close" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
 
-                    <h5 class="modal-title text-orange">Contact Us</h5>
+                <div class="modal-body p-0">
 
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                        aria-label="Close"></button>
+                    <div style="padding: 32px 28px 28px;">
 
-                </div>
-
-                <div class="modal-body">
-
-                    <form id="contactForm" novalidate>
-
-                        <div class="mb-1 mb-md-2 mb-lg-1">
-
-                            <label class="form-label">First Name</label>
-
-                            <input type="text" name="firstName" class="custom-input" />
-
-                            <div class="error-message"></div>
-
+                        <!-- Header -->
+                        <div class="hero-form-header mb-3">
+                            <span class="hero-form-badge"><i class="ri-star-fill"></i> FREE AUDIT</span>
+                            <h2 class="hero-form-title">Get a Free Amazon Audit</h2>
+                            <p class="hero-form-subtitle">Growth plan delivered within 24 hours</p>
                         </div>
 
-                        <div class="mb-1 mb-md-2 mb-lg-1">
+                        <form id="contactForm" novalidate>
 
-                            <label class="form-label">Last name</label>
+                            <div class="mb-3">
+                                <label class="hero-form-label" for="modalFullName">Full name</label>
+                                <div class="hero-input-wrap">
+                                    <i class="ri-user-line"></i>
+                                    <input type="text" id="modalFullName" name="firstName" class="hero-input"
+                                        placeholder="e.g. John Smith" />
+                                </div>
+                                <div class="error-message"></div>
+                            </div>
 
-                            <input type="text" name="lastName" class="custom-input" />
+                            <div class="mb-3">
+                                <label class="hero-form-label" for="modalPhone">Phone / WhatsApp number</label>
+                                <div class="hero-input-wrap">
+                                    <i class="ri-phone-line"></i>
+                                    <input type="tel" id="modalPhone" name="phone" class="hero-input"
+                                        placeholder="e.g. +1 555 123 4567" />
+                                </div>
+                                <div class="error-message"></div>
+                            </div>
 
-                            <div class="error-message"></div>
+                            <div class="mb-3">
+                                <label class="hero-form-label" for="modalEmail">Work email</label>
+                                <div class="hero-input-wrap">
+                                    <i class="ri-mail-line"></i>
+                                    <input type="email" id="modalEmail" name="email" class="hero-input"
+                                        placeholder="e.g. john@yourbrand.com" />
+                                </div>
+                                <div class="error-message"></div>
+                            </div>
 
-                        </div>
+                            <input type="hidden" name="lastName" value="" />
+                            <input type="hidden" name="message" value="Free Amazon Audit Request" />
 
-                        <div class="mb-1 mb-md-2 mb-lg-1">
+                            <div class="hero-turnstile mb-3">
+                                <div class="cf-turnstile" data-sitekey="0x4AAAAAAB5ljRGTij5oBrMm" data-size="flexible"
+                                    data-theme="light"></div>
+                            </div>
 
-                            <label class="form-label">Email</label>
+                            <button class="orange-btn hero-submit-btn w-100" type="submit">Get Free Audit <i
+                                    class="ri-arrow-right-line"></i></button>
 
-                            <input type="email" name="email" class="custom-input" />
+                            <div id="server-message" class="p-2"></div>
 
-                            <div class="error-message"></div>
+                            <div class="hero-trust-points mt-3">
+                                <span><i class="ri-check-line"></i> Free report</span>
+                                <span><i class="ri-check-line"></i> No commitment</span>
+                                <span><i class="ri-check-line"></i> 24hr response</span>
+                            </div>
 
-                        </div>
+                        </form>
 
-                        <div class="mb-1 mb-md-2 mb-lg-1">
-
-                            <label class="form-label">Phone Number</label>
-
-                            <input type="tel" name="phone" class="custom-input" placeholder="123456789" />
-
-                            <div class="error-message"></div>
-
-                        </div>
-
-                        <div class="mb-1 mb-md-2 mb-lg-1">
-
-                            <label class="form-label">Message</label>
-
-                            <textarea name="message" class="custom-input" rows="4"></textarea>
-
-                            <div class="error-message"></div>
-
-                        </div>
-
-                        <div style="display: block; flex-flow: row;">
-
-                            <div class="cf-turnstile" data-sitekey="0x4AAAAAAB5ljRGTij5oBrMm" data-size="flexible"
-                                data-theme="light"></div>
-
-                        </div>
-
-                        <button class="orange-btn" type="submit">Submit</button>
-
-                        <div id="server-message" class="p-2"></div>
-
-                    </form>
+                    </div>
 
                 </div>
 
