@@ -2584,6 +2584,7 @@ footer .footer-block .contact-block ul li a i {
 .knowledge-section {
     padding: 80px 0;
     background: #fff;
+    overflow: hidden;
 }
 
 .knowledge-section .founder-title span {
@@ -3773,22 +3774,14 @@ footer .footer-block .contact-block ul li a i {
     background: var(--orange) !important;
 }
 
-/* Responsive: position buttons below the carousel on small screens */
+/* Responsive: keep buttons inside for small screens */
 @media (max-width: 768px) {
-    .owl-nav {
-        position: static;
-        transform: none;
-        justify-content: center;
-        gap: 15px;
-        margin-top: 20px;
-        pointer-events: auto;
-    }
     .owl-nav .owl-prev {
-        margin-left: 0;
+        margin-left: -10px;
     }
 
     .owl-nav .owl-next {
-        margin-right: 0;
+        margin-right: -10px;
     }
 }
 
