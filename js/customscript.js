@@ -101,14 +101,10 @@ $(document).ready(function () {
     autoplay: false,
     dots: false,
     nav: true,
-    slideTransition: "linear",
-    autoplayTimeout: 4000,
-    autoplaySpeed: 4000,
-    autoplayHoverPause: true,
-    center: true,
+    smartSpeed: 450,
     responsive: {
       0: { items: 1 },
-      600: { items: 3 },
+      600: { items: 2 },
       1000: { items: 3 },
     },
     navText: [
